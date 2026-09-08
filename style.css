@@ -1,0 +1,315 @@
+@font-face {
+    font-family: "fonti";
+    src: url(assets/fonti/Noot_April13/Noot.otf);
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+    direction: rtl;
+}
+
+* {
+    font-family: "fonti";
+}
+
+.body-main {
+    background-image: url(assets/images/desert.png);
+    font-size: xx-large;
+}
+
+.area {
+    position: absolute;
+}
+
+.area:hover {
+    filter: drop-shadow(0px 0px 40px white);
+    z-index: 1;
+}
+
+.check-area {
+    left: 18%;
+    top: 22.5%;
+    width: 28vw;
+}
+
+.class {
+    left: 30%;
+    top: 4%;
+    width: 31vw
+}
+
+.food-zone {
+    left: 36.6%;
+    top: 47%;
+    width: 38vw
+}
+
+.shekem {
+    left: 54%;
+    top: 21%;
+    width: 26vw
+}
+
+.roll2 {
+    position: absolute;
+    width: 5vw;
+    top: 60%;
+    left: -10%;
+    animation: rolling 15s 5s infinite;
+    -webkit-animation: rolling 15s 5s infinite linear;
+}
+
+.roll1 {
+    width: 5vw;
+    top: 10%;
+    position: absolute;
+    animation: rolling 15s 0s infinite;
+    -webkit-animation: rolling 15s 0s infinite linear;
+}
+
+@keyframes rolling {
+    from {
+        transform: rotate(-360deg);
+        left: -10vw;
+    }
+    to {
+        transform: rotate(1440deg);
+        left: 100vw;
+    }
+}
+
+@-webkit-keyframes rolling {
+    from {
+        transform: rotate(-360deg);
+        left: -10vw;
+    }
+    to {
+        transform: rotate(1440deg);
+        left: 100vw;
+    }
+}
+
+/* class */
+
+.body-class {
+    background-image: url(assets/images/class-bg.png);
+}
+
+.book {
+    top: 16%;
+    right: 6.8%;
+    width: 1vw;
+}
+
+.click {
+    top: 53%;
+    left: 34%;
+}
+
+.duck {
+    top: 55%;
+    right: 39%;
+}
+
+.kumta {
+    left: 29%;
+    top: 41%;
+}
+
+/* .loker {
+    left: 1%;
+    top: 25%;
+    width: 20vw;
+}
+
+.open-locker {
+    display: none;
+    
+    width: 20vw;
+} */
+
+/* .loker:hover {
+    display: none;
+} */
+
+/* .open-locker:hover {
+    display: block;
+} */
+
+.mosco {
+    top: 56%;
+    right: 20%;
+}
+
+.shoebill {
+    top: 15%;
+    right: 20%;
+}
+
+.shoes {
+    display: none;
+    left: 15%;
+    top: 30%;
+}
+
+.item {
+    position: absolute;
+}
+
+.item:hover {
+    filter: drop-shadow(0px 0px 20px pink);
+}
+
+
+
+
+.open-loker{
+
+    position:absolute;
+    left: 1%;
+    top: 25%;
+    width:20vw;
+    height:55vh;
+
+    perspective:1800px;
+
+    overflow:visible;
+}
+
+/* הארון הפתוח */
+
+/* .inside{
+    position: absolute;
+    left: 1%;
+    top: 25%;
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    transition:.8s;
+} */
+
+
+/* החלק שמסתיר את פנים הארון */
+
+.cover{
+
+    position:absolute;
+
+    left: 11.5%;
+    top: 25%;
+    
+    width:9.5vw;
+    height:26.5vh;
+
+    background:#efefef;
+
+    transition:.8s;
+}
+
+.cover:hover {
+    animation: opening 3s 0s 1;
+}
+
+@keyframes opening {
+    from {
+        left: 11.5%;
+    }
+    to {
+        left: 20%;
+    }
+}
+
+@-webkit-keyframes opening {
+    from {
+        left: 11.5%;
+    }
+    to {
+        left: 20%;
+    }
+}
+
+/* הדלת
+
+.door{
+
+    position:absolute;
+
+    top:0;
+    right:0;
+
+    width:118px;
+    height:300px;
+
+    background-image:url("assets/images/locker.png");
+
+    background-size:395px 635px;
+
+    background-position:right top;
+
+    background-repeat:no-repeat;
+
+    transform-origin:left center;
+
+    transform-style:preserve-3d;
+
+    transition:
+            transform .9s cubic-bezier(.22,1,.36,1),
+            box-shadow .9s;
+}
+
+
+/* הצל של הדלת */
+
+/* .door::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+            to left,
+            rgba(0,0,0,.12),
+            rgba(0,0,0,0)
+    );
+
+    transition:.8s;
+}
+
+
+/* כאשר הדלת פתוחה */
+
+/* .cabinet.open .door{
+
+    transform:rotateY(-118deg);
+
+    box-shadow:
+            -20px 0 35px rgba(0,0,0,.18);
+}
+
+.cabinet.open .door::before{
+
+    opacity:0;
+}
+
+.cabinet.open .cover{
+
+    opacity:0;
+}
+
+.cabinet.open .inside{
+
+    filter:brightness(1.04);
+} */ 
+
+.smallmap {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 13vw;
+}

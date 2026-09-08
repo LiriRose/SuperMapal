@@ -1,0 +1,43 @@
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+body {
+    background-image: url("backgroundFood.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.title {
+    color: rgb(255, 132, 0);
+    font-size: 100px;
+    position: relative;
+    left: 41%;
+
+}
+
+.board {
+    top: 50%;
+    width: 610px;
+    height: 600px;
+    border: 10px solid rgb(174, 216, 214);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.board img {
+    width:200px;
+    height: 200px;
+    border: 1px solid rgb(98, 138, 136);
+
+}
+.smallmap {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 13vw;
+}

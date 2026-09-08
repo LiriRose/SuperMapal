@@ -1,0 +1,133 @@
+body {
+    direction: rtl;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.cart-two {
+    z-index: -1;
+    position: absolute;
+    top: 60vh;
+    height: 40vh;
+    right: 100vw;
+    animation: movingCart 2s 1s ease-out infinite;
+}
+
+@keyframes movingCart {
+    from {
+        right: 100vw;
+    }
+
+    to {
+        right: -20vw;
+    }
+}
+
+.text-bubble {
+    position: absolute;
+    height: 50%;
+    width: 25%;
+    right: 25%;
+    top: 27%;
+}
+
+.text {
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+}
+
+.the-text {
+    position: absolute;
+    width: 20%;
+    right: 27%;
+    top: 45%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.cola {
+    z-index: -1;
+    position: absolute;
+    top: -10vw;
+    right: 90%;
+    width: 10%;
+    animation: falling 0.9s ease-in infinite;
+}
+
+@keyframes falling {
+    from {
+        top: -10vw;
+    }
+
+    to {
+        top: 100vw;
+    }
+}
+
+.magnum {
+    z-index: -1;
+    position: absolute;
+    top: -10vw;
+    right: 5%;
+    width: 10%;
+    animation: falling 0.5s ease-in infinite;
+}
+
+.nutella {
+    z-index: -1;
+    position: absolute;
+    top: -10vw;
+    right: 50%;
+    width: 15%;
+    animation: falling 1s ease-in infinite;
+}
+
+.cheese {
+    z-index: -1;
+    position: absolute;
+    top: -10vw;
+    right: 30%;
+    width: 10%;
+    animation: falling 0.7s ease-in infinite;
+}
+
+.sour {
+    z-index: -1;
+    position: absolute;
+    top: -10vw;
+    right: 73%;
+    width: 10%;
+    animation: falling 0.6s ease-in infinite;
+}
+
+/* .shadow {
+    z-index: 0;
+    background-color: transparent;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    opacity: 100%;
+    animation: theShadow 1s infinite;
+} */
+
+@keyframes theShadow{
+    from {
+        background-color: transparent;
+        opacity: 100%;
+    }
+    to {
+        background-color: red;
+        opacity: 30%;
+    }
+}
+
+.smallmap {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 13vw;
+}

@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewprt" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="game.js" defer></script>
+    <title>חדר אוכל</title>
+</head>
+
+<body>
+    <h1 class="title">חדר אוכל</h1>
+    <div class="board" id="board">
+    </div>
+    <h1>: תורות</h1>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleFood.css" type="text/css">
+    <script type="text/javascript" src="game.js" defer></script>
+    <title>חדר אוכל</title>
+</head>
+
+<body>
+    <a href="main.html"><img class="smallmap" src="smallMap.png" alt="npc"></a>
+
+    <h1 class="title">חדר אוכל</h1>
+    
+    <div class="board" id="board"></div>
+    
+    <h1 class="turns-title">תורות: <span id="turns-count">0</span></h1>
+    
+    <!-- הודעת ניצחון וכפתור איפוס -->
+    <div id="win-message" style="display: none;">🎉 כל הכבוד! הפאזל פתור בהצלחה! 🎉</div>
+    <button id="reset-btn" onclick="resetGame()">ערבב והתחל מחדש</button>
+</body>
+</html>

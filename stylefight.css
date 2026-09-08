@@ -1,0 +1,386 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+    overflow:hidden;
+    background:url(background_fight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* מסך התחלה */
+
+#startScreen{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,0.65);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    z-index:100;
+
+    color:white;
+}
+
+
+#startScreen h1{
+
+    font-size:60px;
+    margin-bottom:30px;
+
+}
+
+
+#startScreen p{
+
+    font-size:30px;
+    margin-bottom:10px;
+
+}
+
+
+#pazamInput{
+
+    font-size:30px;
+    width:180px;
+
+    text-align:center;
+
+    padding:10px;
+
+    border-radius:15px;
+
+    border:none;
+
+    margin-bottom:20px;
+
+}
+
+
+button{
+
+    font-size:28px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    background:#ffb703;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+
+button:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* הזירה */
+
+.arena{
+
+    width:100vw;
+    height:100vh;
+
+    position:relative;
+
+}
+
+
+
+/* דמויות */
+
+.fighter{
+
+    width:180px;
+
+    position:absolute;
+
+    bottom:40px;
+
+    transition:2s linear;
+
+}
+
+
+.boy{
+
+    left:420px;
+    bottom: 250px;
+
+}
+
+
+.girl{
+
+    right:420px;
+    bottom: 250px;
+
+
+}
+
+
+
+/* מד ניקוד */
+
+.score{
+
+    position:absolute;
+
+    top:30px;
+
+    background:white;
+
+    padding:15px 25px;
+
+    border-radius:20px;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+    z-index:10;
+
+}
+
+
+.boyScore{
+
+    left:30px;
+
+}
+
+
+.girlScore{
+
+    right:30px;
+
+}
+
+
+
+/* ספירה לאחור */
+
+#countdown{
+
+    position:absolute;
+
+    top:40%;
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:100px;
+
+    font-weight:bold;
+
+    color:red;
+
+    z-index:20;
+
+}
+
+
+
+/* מילים של מכות */
+
+#hitText{
+
+    position:absolute;
+
+    top:45%;
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:80px;
+
+    font-weight:bold;
+
+    color:#ff0000;
+
+    z-index:30;
+
+}
+
+
+
+/* רעידות בזמן מכות */
+
+.fighting{
+
+    animation:shake .12s infinite;
+
+}
+
+
+@keyframes shake{
+
+    0%{
+        transform:translateX(-10px);
+    }
+
+    50%{
+        transform:translateX(10px);
+    }
+
+    100%{
+        transform:translateX(-10px);
+    }
+
+}
+
+
+
+/* הבן מפסיד */
+
+.lose{
+
+    filter:grayscale(100%);
+
+    opacity:.6;
+
+    transform:rotate(90deg);
+
+}
+
+
+
+/* מסך ניצחון */
+
+#winScreen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.7);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:200;
+
+}
+
+
+
+.winBox{
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    animation:pop .5s;
+
+}
+
+
+.winBox h2{
+
+    font-size:50px;
+
+    color:#ff006e;
+
+}
+
+
+.winBox p{
+
+    font-size:30px;
+
+    margin:20px;
+
+}
+
+
+
+@keyframes pop{
+
+    from{
+
+        transform:scale(0);
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+/* קונפטי */
+
+.confetti{
+
+    position:absolute;
+
+    width:15px;
+
+    height:15px;
+
+    background:#ffb703;
+
+    animation:fall 3s linear infinite;
+
+}
+
+
+@keyframes fall{
+
+    from{
+
+        top:-20px;
+
+    }
+
+    to{
+
+        top:100vh;
+
+        transform:rotate(360deg);
+
+    }
+
+}
+.smallmap {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 13vw;
+}

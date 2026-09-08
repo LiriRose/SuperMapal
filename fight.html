@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>רחבת מסדרים</title>
+    <link rel="stylesheet" href="stylefight.css">
+    <script src="code.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- מסך התחלה -->
+    <div id="startScreen">
+        <a href="main.html"><img class="smallmap" src="smallMap.png" alt="npc"></a>
+
+        <h1>🥊 קרב אגרוף  🥊</h1>
+
+        <p>מה הפז"ם שלך?</p>
+
+        <input id="pazamInput" type="number" min="1" placeholder="לדוגמה: 67">
+
+        <button id="startButton">
+               יאללה לקרב   ▶ 
+        </button>
+
+    </div>
+
+
+    <!-- הזירה -->
+    <div class="arena">
+
+        <!-- מד ניצחונות -->
+        <div class="score boyScore">
+            👦 רשע
+            <br>
+            🏆 <span id="boyWins">0</span>
+        </div>
+
+        <div class="score girlScore">
+            👧 מפל"ית
+            <br>
+            🏆 <span id="girlWins">0</span>/<span id="maxWins">0</span>
+        </div>
+
+
+        <!-- ספירה לאחור -->
+        <div id="countdown"></div>
+
+
+        <!-- אפקטי מכות -->
+        <div id="hitText"></div>
+
+
+        <!-- דמויות -->
+        <img id="boy"
+             class="fighter boy"
+             src="boy-1.png">
+
+        <img id="girl"
+             class="fighter girl"
+             src="girl-1.png">
+
+
+    </div>
+
+
+    <!-- הודעת ניצחון -->
+    <div id="winScreen">
+
+        <div class="winBox">
+
+            <h1>🎉🎉🎉🏆🎉🎉🎉</h1>
+            <br>
+
+            <h2>
+               וואו!
+            </h2>
+            <br>
+            <h2 id="finalText" ></h2>
+            <br>
+
+            <button onclick="location.reload()">
+                🔄  באלי שוב 🔄
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
